@@ -43,9 +43,15 @@ export default function ProductDetailsPage() {
       </div>
 
       {/* Product Details */}
-      <p className="text-lg font-semibold mb-2">Price: ${product.price}</p>
+     <div className="flex items-end">
+       <div>
+        <p className="text-lg font-semibold mb-2">Price: ${product.price}</p>
       <p className="text-gray-700 mb-4">{product.description}</p>
       <p className="text-sm text-blue-500">Category: {product.category}</p>
+      </div>
+      <div><button className="justify items-end px-3 py-1 bg-cyan-600 text-white font-semibold rounded-lg hover:bg-cyan-700 transition-colors"> pay now</button></div>
+     </div>
+
     </div>
   );
 }
