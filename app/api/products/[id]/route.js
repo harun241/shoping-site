@@ -15,7 +15,7 @@ const Product =
 // Connect to MongoDB
 async function connectDB() {
   if (mongoose.connection.readyState === 0) {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.NEXT_PUBLIC_MONGO_URI);
   }
 }
 

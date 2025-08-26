@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Hero() {
@@ -22,9 +23,11 @@ export default function Hero() {
           <p className="text-gray-700 text-lg mb-6">
             Discover amazing products at unbeatable prices. Shop, compare, and save every day!
           </p>
-          <button className="px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg hover:bg-cyan-700 transition-colors">
-            Get Started
-          </button>
+         <Link href="/All-products">
+  <button className="px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg hover:bg-cyan-700 transition-colors">
+    Get Started
+  </button>
+</Link>
         </div>
 
       </div>
